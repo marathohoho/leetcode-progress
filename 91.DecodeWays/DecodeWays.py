@@ -21,9 +21,6 @@ Explanation: It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
 '''
 
 # importing time module
-from time import perf_counter
-from functools import wraps
-
 from time import time
 class Timed:
     def __init__(self, func):
