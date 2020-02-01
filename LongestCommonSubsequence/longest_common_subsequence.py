@@ -15,3 +15,10 @@ def solution(str1, str2) :
 
 	print(dp)
 	return dp[-1][-1]
+
+
+"""
+Time : O(m * n) m, n - lengths of strings
+
+Space : O(m * n) as well due to dp matrix
+"""
