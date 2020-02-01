@@ -78,3 +78,103 @@ class LRU2(OrderedDict) :
 		self[key] = value
 		if len(self) > self.capacity :
 			self.popitem(last = False)
+
+
+# approach using doubly linked list and dictionary
+
+class DoublLinkedNode :
+	def __init__(self) :
+		self.key = 0
+		self.value = 0
+		self.next = None
+		self.prev = None
+
+class LRU3 :
+	def __init__(self, capacity) :
+		self.capacity = capacity
+		self.size = 0
+		self.cache = dict() # stores the reference to the DoublyNode object
+
+		self.head = DoublLinkedNode()
+		self.tail = DoublLinkedNode()
+
+		self.head.next = self.tail
+		self.tail.prev = self.head
+
+	# new node is always added to the head of the Linked List
+	def _add_node(self, node) :
+		node.next = self.head.next
+		node.prev = self.head
+
+		self.head.next.prev = node
+		self.head.next = node
+
+	# remove the node and add it again
+	# although we could move the node from tail to the head
+	def _move_to_head(self, node) :
+		self._remove_node(node)
+		self._add_node(node)
+
+	# this method deletes any node from any location
+	def _remove_node(self, node) :
+		prev = node.prev
+		nextPtr = node.next
+
+		prev.next = nextPtr
+		nextPtr.prev = prev
+
+	# use the remove node method
+	# return the node
+	def _pop_tail(self) :
+		res = self.tail.prev
+
+		self._remove_node(res)
+		return res
+
+	def get(self, key) :
+		node = self.cache.get(key, None)
+
+		# if we don't have such node
+		if not Node :
+			return -1
+
+		# if we have the node
+		# before returning it, make it newly used node
+		# mode it to the head of the list
+		self._move_to_head(node)
+		return node.val
+
+	def put(self, key, value) :
+		node = self.cache.get(key, None)
+
+		# if key does not exit
+		# create the Doubly Node
+		# place the new node into the cache dictionary
+		# increase the size of our LRU cache
+		# chech if the cache is overflown
+		# if so, delete the LRU
+
+		if not node :
+			newNode = DoublLinkedNode()
+			newNode.key = key
+			newNode.value = value
+
+			self.cache[key] = newNode
+			self._add_node(newNode)
+			self.size += 1
+
+			if self.size > self.capacity :
+				# remove the LRU node which is the node prev to Tail
+				tail = self._pop_tail()
+				def self.cache[tail.key]
+				self.size -= 1
+
+		# if node exists
+		# update the value
+		# move the value to the beginning of the list
+			# remove the node
+			# add the node
+		else :
+			moveMe = self.cache[key]
+			self._move_to_head(moveMe)
+			moveMe.value = value
