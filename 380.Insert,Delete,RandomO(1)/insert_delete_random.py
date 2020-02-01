@@ -34,7 +34,7 @@ class RandomizedSet :
 
 	def getRandom(self) :
         """
-        Get a random element from the set.
+        Get a random element from the set.d
         """
 		# choice method outputs a random element from the iterable (list) in O(1)
 		return random.choice(self.lst)
