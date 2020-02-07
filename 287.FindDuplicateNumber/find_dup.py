@@ -27,7 +27,34 @@ def find_dup(arr) :
 			return abs(arr[i])
 		arr[abs(arr[i])] *= -1
 
+
+# since we cannot modify the array, we must solve it in a different way
+
+def find_dup2(arr):
+	# use hare tortoise method for finding a cycle detection and then
+	# start from the 0th index and tortoise/hare position and start walking one step at a time
+
+	tortoise = arr[0]
+	hare = arr[arr[0]]
+
+	# find intersection point
+	while tortoise != hare :
+		tortoise = arr[tortoise]
+		hare = arr[arr[hare]]
+
+	# find the entrance point to a cycle
+	ptr1 = arr[0]
+	ptr2 = arr[tortoise]
+
+	while ptr1 != ptr2 :
+		ptr1 = arr[ptr1]
+		ptr2 = arr[ptr2]
+
+	return ptr1
+
 if __name__ == "__main__":
-	print(find_dup([1,2,2]))
-	print(find_dup([3,1,3,4,2]))
-	print(find_dup([1,3,4,2,2]))
+	print(find_dup2([1,2,2]))
+	print(find_dup2([3,1,3,4,2]))
+	print(find_dup2([1,3,4,2,2]))
+
+
