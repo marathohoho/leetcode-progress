@@ -5,44 +5,44 @@ Didnt' solve, didn't get solution. Try again :
 Solved myself:
 
 31-Jan-2020 :
-	90, 64,
+	70.ClimbingStairs, 64.MinimumPath,
 
 02-Feb-2020 :
-	1342, 1341, 1344 (resolve it, cool problem)
+	1342.ReduceArraySizetoTheHalf, 1341.KWeakestRowsinaMatrix, 1344.JumpGameV (resolve it, cool problem)
 
 
 03-Feb-2020 :
 	ReverseLinkedList(in contant time), 1099(rehearse the mathematic formula)
 
 06-Feb-2020:
-	442, 287, 448
+	442.FindAllDuplicates, 287.FindDuplicateNumber, 448.FindNumbersDisappearedInArray
 
 07-Feb-2020 :
-	114,
+	114.FlattenBinaryTree,
 
 08-Feb-2020 :
-	8, 31
+	8.StringtoInteger(atoi), 31.NextPermutation
 
 10-Feb-2020 :
-	70,
+	70.ClimbingStairs,
 
 
 Solved with help:
 
 31-Jan-2020 :
-	91, 62, 171, Max Sum Increasing Subsequence
+	91.DecodeWays, 62.UniquePaths, 171.DungeonGame, Max Sum Increasing Subsequence
 
 01-Feb-2020 :
-	1277, Longest Commong Subsequence, Knapsack problem, 146, 380
+	1277.CountSquareSubmatricesWithAllOne, Longest Commong Subsequence, Knapsack problem, 146.LRU, 380.Insert,Delete,RandomO(1)
 
 02-Feb-2020 :
 	5330,
 
 07-Feb-2020 :
-	287 (solved with correct method), 41, 430
+	287 (solved with correct method), 41.FirstMissingPositive, 430.FlattenaMultilevelDoublyLinkedList
 
 08-Feb-2020 :
-	6, 12, 46(rehearse)
+	6.ZigZagConversion, 12.IntegertoRoman, 46(rehearse)
 
 09-Feb-2020 :
 	51(n-queens),
