@@ -33,7 +33,7 @@ def solution(arr, target) :
 
 		elif target > 0 :
 			for i in range(start, end) :
-				if i != start and arr[i] != arr[i-1] :
+				if i != start and arr[i] == arr[i-1] :
 					continue
 				curr.append(arr[i])
 				backtrack(curr, i + 1, end, target - arr[i])
@@ -41,7 +41,7 @@ def solution(arr, target) :
 
 	res = []
 	arr.sort()
-
+	backtrack([], 0, len(arr), target)
 	return res
 
 
