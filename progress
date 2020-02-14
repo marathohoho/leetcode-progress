@@ -27,7 +27,7 @@ Solved myself:
 	70.ClimbingStairs, 90.SubsetsII(non-distinct), 40.CombinationSumII
 
 14-Feb-2020 :
-	76.MinimumWindowSubstring
+	76.MinimumWindowSubstring(H), 155.MinStack(E), 716.MaxStack(E),
 
 
 
@@ -58,4 +58,4 @@ Solved with help:
 	78.SubsetsDistinct, 39.CombinationSum,
 
 14-Feb-2020:
-	239.SlidingWindowMaximum,
+	239.SlidingWindowMaximum(Hard),
