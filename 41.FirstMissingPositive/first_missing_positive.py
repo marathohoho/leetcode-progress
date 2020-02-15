@@ -30,7 +30,7 @@ def solution(arr) :
 	# we do not need any values <1 and >n in our array
 	for i in range(n) :
 		if arr[i] < 1 or arr[i] > n :
-			arr[i] = 1 # we can do this because by this time we already know that we do have 1 in our array
+			arr[i] = 1 # we can do this because by this time we already know that we do NOT have 1 in our array
 
 	# mark the 'visited' numbers in array using
 	# method of number as index method
