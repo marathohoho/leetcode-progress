@@ -29,7 +29,8 @@ Solved myself:
 14-Feb-2020 :
 	76.MinimumWindowSubstring(H), 155.MinStack(E), 716.MaxStack(E),
 
-
+16-Feb-2020 :
+	PatternMatching(H)
 
 
 
@@ -59,3 +60,6 @@ Solved with help:
 
 14-Feb-2020:
 	239.SlidingWindowMaximum(Hard),
+
+17-Feb-2020 :
+	LongestIncreasingSubsequence(M),
