@@ -42,7 +42,7 @@ def solution(words) :
 			temp = word[:i] + word[i+1:]
 			if temp in dp :
 				dp[word] = max(dp[word], dp[temp] + 1)
-				continue
+
 
 	print(dp)
 	return max(dp.values())
