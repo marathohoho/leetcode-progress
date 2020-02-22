@@ -37,8 +37,13 @@ Solved myself:
 
 19-Feb-2020 :
 	443.StringCompression(E)(Partially solved myself)
-12-Feb-2020 :
+
+21-Feb-2020 :
 	130.SurroundedRegions(M), 1048.LongestStringChain(M)
+
+22-Feb-2020 :
+	286.WallsandGates(M)
+
 
 
 Solved with help:
