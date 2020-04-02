@@ -24,6 +24,8 @@ Explanation: The LCA of nodes 5 and 4 is 5, since a node can be a descendant of 
 #         self.left = None
 #         self.right = None
 
+
+# O(N) time and O(N) space - for recursive calls
 class Solution:
 	def __init__(self) :
 		self.lca = None
