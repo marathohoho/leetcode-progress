@@ -52,11 +52,11 @@ def solution(begin_word, end_word, word_list) :
 	# O(length * words_list)
 	for word in word_list :
 		for i in range(length) :
-			candidates[word[:i]  + word[i+1:]].append(word)
+			candidates[word[:i] + '*' + word[i+1:]].append(word)
 	while wordsq :
 		word, level = wordsq.popleft()
 		for i in range(length) :
-			intermediate_word = word[:i]  + word[i+1:]
+			intermediate_word = word[:i] + '*' + word[i+1:]
 			for candidate in candidates[intermediate_word] :
 				if candidate == end_word :
 					return level + 1
