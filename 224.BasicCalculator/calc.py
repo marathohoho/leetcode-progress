@@ -45,11 +45,12 @@ def calc(s) :
 			res = 0
 			sign = 1
 		elif c == ')' :
-			res += sign * num
+			res += sign * operand
 			res *= stack.pop()
 			res += stack.pop()
 
 			operand = 0
-	return res + operand * sign
+	return res + operand * sign`
+
 
 
